@@ -10,3 +10,6 @@ select * from sensor_history where "kks"='4DCS.40CFB41GH0' limit 10
 - run: open server: open tsdb store: cannot allocate memory
 解决办法，但是不知道为啥：
 - sudo mv /var/lib/influxdb/data /var/lib/influxdb/data_bak
+
+### 使用指定配置文件启动
+influxd -config /etc/influxdb/influxdb.conf
